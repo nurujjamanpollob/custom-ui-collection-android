@@ -79,9 +79,11 @@ Detailed documentation will come shortly. Thank you.
 
 ## Class Documentation Part
 
-<ul>
-<li>
-<a href="https://github.com/nurujjamanpollob/custom-ui-collection-android/blob/master/uimodule/src/main/java/com/nurujjamanpollob/customview/CircleLayout.java">CircleLayout - A Custom ConstraintLayout</a></li></ul> 
+
+<h3>
+<a href="https://github.com/nurujjamanpollob/custom-ui-collection-android/blob/master/uimodule/src/main/java/com/nurujjamanpollob/customview/CircleLayout.java">CircleLayout - A Custom ConstraintLayout</a></h3>
+
+<br />
 
 This class is a extended version of ConstraintLayout. This class is used to draw a circle in the background of the View, and it even supports circle border and supports adjusting background circle size parameter. The reason of using ConstraintLayout as it supports designing process so easy and highly customizable.
 
@@ -132,6 +134,7 @@ This method used to set the layout's circle color.
 
 <tr>
 <th> Parameters </th>
+<th> Short Details </th>
 </tr>
 
 <tr>
@@ -142,16 +145,21 @@ This method used to set the layout's circle color.
 
 </tr>
 
-<tr>
-
-<td> Returns </td>
-<td> Nothing </td> 
+</tbody>
+</table>
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+<th> Short Details </th>
 </tr>
 
+<tr>
+<td>Void</td>
+<td>Nothing</td>
+</tr>
 </tbody>
-
 </table>
-
 <br />
 
 
@@ -168,6 +176,7 @@ This method used to set the layout's circle border color.
 
 <tr>
 <th> Parameters </th>
+<th> Short Details </th>
 </tr>
 
 <tr>
@@ -179,17 +188,16 @@ This method used to set the layout's circle border color.
 </tr>
 </tbody>
 </table>
-
-<br />
 <table>
 <tbody>
 <tr> 
 <th>Return Type</th>
+<th> Short Details </th>
 </tr>
 
 <tr>
 <td>Void</td>
-<td>Nothing Return anything!</td>
+<td>Nothing</td>
 </tr>
 </tbody>
 </table>
@@ -210,6 +218,7 @@ This method used to set the layout's circle border width.
 
 <tr>
 <th> Parameters </th>
+<th> Short Details </th>
 </tr>
 
 <tr>
@@ -223,16 +232,16 @@ This method used to set the layout's circle border width.
 </tbody>
 </table>
 
-<br />
 <table>
 <tbody>
 <tr> 
 <th>Return Type</th>
+<th> Short Details </th>
 </tr>
 
 <tr>
 <td>Void</td>
-<td>Nothing Return anything!</td>
+<td>Nothing</td>
 </tr>
 </tbody>
 </table>
@@ -253,6 +262,7 @@ This method used to set the layout's circle width. Especially, used to override 
 
 <tr>
 <th> Parameters </th>
+<th> Short Details </th>
 </tr>
 
 <tr>
@@ -265,17 +275,16 @@ This method used to set the layout's circle width. Especially, used to override 
 
 </tbody>
 </table>
-
-<br />
 <table>
 <tbody>
 <tr> 
 <th>Return Type</th>
+<th> Short Details </th>
 </tr>
 
 <tr>
 <td>Void</td>
-<td>Nothing Return anything!</td>
+<td>Nothing</td>
 </tr>
 </tbody>
 </table>
@@ -297,6 +306,7 @@ This method used to set the layout's circle height. Especially, used to override
 
 <tr>
 <th> Parameters </th>
+<th> Short Details </th>
 </tr>
 
 <tr>
@@ -309,17 +319,16 @@ This method used to set the layout's circle height. Especially, used to override
 
 </tbody>
 </table>
-
-<br />
 <table>
 <tbody>
 <tr> 
 <th>Return Type</th>
+<th> Short Details </th>
 </tr>
 
 <tr>
 <td>Void</td>
-<td>Nothing Return anything!</td>
+<td>Nothing</td>
 </tr>
 </tbody>
 </table>
@@ -341,6 +350,7 @@ This method used to set the layout's circle width and height. Especially, used t
 
 <tr>
 <th> Parameters </th>
+<th> Short Details </th>
 </tr>
 
 <tr>
@@ -361,17 +371,16 @@ This method used to set the layout's circle width and height. Especially, used t
 
 </tbody>
 </table>
-
-<br />
 <table>
 <tbody>
 <tr> 
 <th>Return Type</th>
+<th> Short Details </th>
 </tr>
 
 <tr>
 <td>Void</td>
-<td>Nothing Return anything!</td>
+<td>Nothing</td>
 </tr>
 </tbody>
 </table>
@@ -393,6 +402,7 @@ Revert back to the original circle width and height, while creating this view fo
 
 <tr>
 <th> Parameters </th>
+<th> Short Details </th>
 </tr>
 
 <tr>
@@ -405,21 +415,160 @@ Revert back to the original circle width and height, while creating this view fo
 
 </tbody>
 </table>
-
-<br />
 <table>
 <tbody>
 <tr> 
 <th>Return Type</th>
+<th> Short Details </th>
 </tr>
 
 <tr>
 <td>Void</td>
-<td>Nothing Return anything!</td>
+<td>Nothing</td>
 </tr>
 </tbody>
 </table>
 
+<br />
+
+<h4> XML Properties </h4>
+
+<br />
+<h5> app:circle_color </h5> 
+<pre>
+<code> app:circle_color </code>
+</pre>
+
+Used to define the background circle color from the XML TAG
+
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:circle_color </td>
+<td> color </td>
+<td> Defines the CircleLayout's background circle color. A valid Android Framework supported hex color code is expected. it will be parsed autometically, and converted to framework supported format. </td> 
+</tr> 
+</tbody>
+</table>
+
+
+<br />
+<h5> app:circle_border_color </h5> 
+<pre>
+<code> app:circle_border_color </code>
+</pre>
+
+Used to define the background circle border color from the XML TAG
+
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:circle_border_color </td>
+<td> color </td>
+<td> Defines the CircleLayout's background circle border color. A valid Android Framework supported hex color code is expected. it will be parsed autometically, and converted to framework supported format. </td> 
+</tr> 
+</tbody>
+</table>
+
+
+<br />
 
 
 
+<h5> app:circle_border_width </h5> 
+<pre>
+<code> app:circle_border_width </code>
+</pre>
+
+Used to define the background circle border width from the XML TAG
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:circle_border_width </td>
+<td> dimension </td>
+<td> Defines the CircleLayout's background circle border width. A valid Android Framework supported diemsion format is expected, such as dp, in etc. it will be parsed autometically, and converted to framework supported format. </td> 
+</tr> 
+</tbody>
+</table>
+
+
+<br />
+<h5> android:layout_height </h5> 
+<pre>
+<code> android:layout_height </code>
+</pre>
+
+Used to define the View Height
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> android:layout_height </td>
+<td> dimension </td>
+<td> Defines the CircleLayout's View Height. A valid Android Framework supported diemsion format is expected, such as dp, in etc. it will be parsed autometically, and converted to framework supported format. </td> 
+</tr> 
+</tbody>
+</table>
+
+<br />
+<h5> android:layout_width </h5> 
+<pre>
+<code> android:layout_width  </code>
+</pre>
+
+Used to define the View Width
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> android:layout_width  </td>
+<td> dimension </td>
+<td> Defines the CircleLayout's View Width. A valid Android Framework supported diemsion format is expected, such as dp, in etc. it will be parsed autometically, and converted to framework supported format. </td> 
+</tr> 
+</tbody>
+</table>
+
+<br />
+<br />
+
+<h4> Constants </h4>
+No constants are defined for this class!
+
+<h4> <a href="https://github.com/nurujjamanpollob/custom-ui-collection-android/blob/master/uimodule/src/main/java/com/nurujjamanpollob/customview/RippleBackground.java">RippleBackground - Show Ripple effect on the view </a></h4>
+
+<br />
+<br />
+<h2>The documentation is in progress. It will be updated shortly! </h2>
