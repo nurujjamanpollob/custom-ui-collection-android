@@ -87,6 +87,69 @@ This class is a extended version of ConstraintLayout. This class is used to draw
 
 <h3> Issues </h3>
 
+You can't use <b>wrap_content</b> and <b>match_parent</b> as value of tag parameter of <b>android:layout_width</b> and <b>android:layout_height</b> <br />
 
+<b>Why?</b> <br /> <br />
+
+Because, <b>wrap_content</b> and <b>match_parent</b> is a dimension, and I don't know why android framework not passing appropriate dimension value for them, while reading.
+
+While initializing views, we need the <b>Height</b> and <b>Width</b> of the parent view, in order to calculate appropriate margin to center the circle view. when the parameter passes <b>wrap_content</b> and <b>match_parent</b> is throws <b>UnSupportedOperationException</b> because android framework do not convert them to dimension, and throw a <b>Exception</b> instead. While creating views, we always get <b>0</b> for <b>View Width</b> and <b>View Height</b>. So, it's become impossible to measure margins!
+
+<br />
+
+<h4> Constructors </h4>
+
+First:
+<pre>
+<code> public CircleLayout(Context context) // Initialize the view in given context </code>
+</pre>
+
+<br />
+Second:
+<pre>
+<code> public CircleLayout(Context context, AttributeSet attrs) // Initialize the view in given context with attributes from XML </code>
+</pre>
+<br />
+Third:
+<pre>
+<code> public CircleLayout(Context context, AttributeSet attrs, int defStyleAttr) // Initialize the view in given context with attributes from XML and An attribute in the current theme that contains a reference to a style resource that supplies default values for the view </code>
+</pre>
+
+
+<h4> Public Methods </h4>
+
+<br />
+<h5> setCircleColor </h5>
+
+<pre>
+<code>public void setCircleColor(int colorInt)</code>
+</pre>
+This method used to set the layout's circle color.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+</tr>
+
+<tr>
+
+<td> colorInt </td>
+
+<td> The color hex in the Android Framework supported Integer format </td>
+
+</tr>
+
+<tr>
+
+<td> Retruns </td>
+<td> Nothing </td> 
+</tr>
+
+</tbody>
+
+</table>
 
 
