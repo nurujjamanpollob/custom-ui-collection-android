@@ -157,7 +157,7 @@ public class CircleLayout extends ConstraintLayout {
     }
 
     /**
-     * Method to change circle border width. Please note, convert px to dp before passing the value.
+     * Method to change circle border width. Please note, convert dp to px before passing the value.
      *
      * @param width The width of the border
      */
@@ -167,7 +167,7 @@ public class CircleLayout extends ConstraintLayout {
     }
 
     /**
-     * Method to adjust the circle width. Please note, convert px to dp before passing the value.
+     * Method to adjust the circle width. Please note, convert dp to px before passing the value.
      *
      * @param width The width of the circle
      */
@@ -177,13 +177,24 @@ public class CircleLayout extends ConstraintLayout {
     }
 
     /**
-     * Method to adjust the circle height. Please note, convert px to dp before passing the value.
+     * Method to adjust the circle height. Please note, convert dp to px before passing the value.
      *
      * @param height The height of the circle
      */
     public void setCircleHeight(int height) {
         Circle circle = (Circle) getViewById(circleId);
         circle.setCircleHeight(height);
+    }
+
+    /**
+     * Method to define the circle size. Please note, convert dp to px before passing the value.
+     * This method will override the circle width and height.
+     * @param width The width of the circle
+     * @param height The height of the circle
+     */
+    public void setCircleSize(int width, int height) {
+        Circle circle = (Circle) getViewById(circleId);
+        circle.setCircleSize(width, height);
     }
 
     /**
