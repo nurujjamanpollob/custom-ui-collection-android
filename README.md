@@ -507,7 +507,7 @@ Used to define the background circle border width from the XML TAG
 <tr>
 <td> app:circle_border_width </td>
 <td> dimension </td>
-<td> Defines the CircleLayout's background circle border width. A valid Android Framework supported diemsion format is expected, such as dp, in etc. it will be parsed autometically, and converted to framework supported format. </td> 
+<td> Defines the CircleLayout's background circle border width. A valid Android Framework supported dimension format is expected, such as dp, in etc. it will be parsed autometically, and converted to framework supported format. </td> 
 </tr> 
 </tbody>
 </table>
@@ -532,7 +532,7 @@ Used to define the View Height
 <tr>
 <td> android:layout_height </td>
 <td> dimension </td>
-<td> Defines the CircleLayout's View Height. A valid Android Framework supported diemsion format is expected, such as dp, in etc. it will be parsed autometically, and converted to framework supported format. </td> 
+<td> Defines the CircleLayout's View Height. A valid Android Framework supported dimension format is expected, such as dp, in etc. it will be parsed autometically, and converted to framework supported format. </td> 
 </tr> 
 </tbody>
 </table>
@@ -556,7 +556,7 @@ Used to define the View Width
 <tr>
 <td> android:layout_width  </td>
 <td> dimension </td>
-<td> Defines the CircleLayout's View Width. A valid Android Framework supported diemsion format is expected, such as dp, in etc. it will be parsed autometically, and converted to framework supported format. </td> 
+<td> Defines the CircleLayout's View Width. A valid Android Framework supported dimension format is expected, such as dp, in etc. it will be parsed autometically, and converted to framework supported format. </td> 
 </tr> 
 </tbody>
 </table>
