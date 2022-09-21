@@ -118,6 +118,8 @@ Third:
 
 <h4> Public Methods </h4>
 
+<br />
+<h5> setCircleColor </h5>
 
 <pre>
 <code>public void setCircleColor(int colorInt)</code>
