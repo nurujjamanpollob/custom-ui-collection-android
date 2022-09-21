@@ -93,7 +93,7 @@ You can't use <b>wrap_content</b> and <b>match_parent</b> as value of tag parame
 
 Because, <b>wrap_content</b> and <b>match_parent</b> is a dimension, and I don't know why android framework not passing appropriate dimension value for them, while reading.
 
-While initializing views, we need the <b>Height</b> and <b>Width</b> of the parent view, in order to calculate appropriate margin to center the circle view. when the parameter passes <b>wrap_content</b> and <b>match_parent</b> is throws <b>UnSupportedOperationException</b> because android framework do not convert them to dimension, and throw a <b>Exception</b> instead. While creating views, we always get <b>0</b> for <b>View Width</b> and <b>View Height</b>. So, it's become ipossible to measure margins!
+While initializing views, we need the <b>Height</b> and <b>Width</b> of the parent view, in order to calculate appropriate margin to center the circle view. when the parameter passes <b>wrap_content</b> and <b>match_parent</b> is throws <b>UnSupportedOperationException</b> because android framework do not convert them to dimension, and throw a <b>Exception</b> instead. While creating views, we always get <b>0</b> for <b>View Width</b> and <b>View Height</b>. So, it's become impossible to measure margins!
 
 <br />
 
@@ -116,5 +116,38 @@ Third:
 </pre>
 
 
-# The documentation is under development, soon it will be get updated!
+<h4> Public Methods </h4>
+
+
+<pre>
+<code>public void setCircleColor(int colorInt)</code>
+</pre>
+This method used to set the layout's circle color.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+</tr>
+
+<tr>
+
+<td> colorInt </td>
+
+<td> The color hex in the Android Framework supported Integer format </td>
+
+</tr>
+
+<tr>
+
+<td> Retruns </td>
+<td> Nothing </td> 
+</tr>
+
+</tbody>
+
+</table>
+
 
