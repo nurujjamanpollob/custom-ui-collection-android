@@ -76,3 +76,17 @@ In your app level <b>build.gradle</b> file, add this:
 <br />
 
 Detailed documentation will come shortly. Thank you.
+
+## Class Documentation Part
+
+<ul>
+<li>
+<a href="https://github.com/nurujjamanpollob/custom-ui-collection-android/blob/master/uimodule/src/main/java/com/nurujjamanpollob/customview/CircleLayout.java">CircleLayout - A Custom ConstraintLayout</a></li></ul> 
+
+This class is a extended version of ConstraintLayout. This class is used to draw a circle in the background of the View, and it even supports circle broder and supports adjusting background circle size parameter. The reason of using ConstraintLayout as it supports deisigning process so easy and highly customizable.
+
+<h3> Issues </h3>
+
+
+
+
