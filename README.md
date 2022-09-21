@@ -144,12 +144,282 @@ This method used to set the layout's circle color.
 
 <tr>
 
-<td> Retruns </td>
+<td> Returns </td>
 <td> Nothing </td> 
 </tr>
 
 </tbody>
 
 </table>
+
+<br />
+
+
+<h5> setCircleBorderColor </h5>
+
+<pre>
+<code>public void setCircleBorderColor(int colorInt)</code>
+</pre>
+This method used to set the layout's circle border color.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+</tr>
+
+<tr>
+
+<td> colorInt </td>
+
+<td> The color hex in the Android Framework supported Integer format </td>
+
+</tr>
+</tbody>
+</table>
+
+<br />
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+</tr>
+
+<tr>
+<td>Void</td>
+<td>Nothing Return anything!</td>
+</tr>
+</tbody>
+</table>
+
+<br />
+
+
+<h5> setCircleBorderWidth </h5>
+
+<pre>
+<code>public void setCircleBorderWidth(int width)</code>
+</pre>
+This method used to set the layout's circle border width.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+</tr>
+
+<tr>
+
+<td> width </td>
+
+<td> The number should be represent the px value of the border width </td>
+
+</tr>
+
+</tbody>
+</table>
+
+<br />
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+</tr>
+
+<tr>
+<td>Void</td>
+<td>Nothing Return anything!</td>
+</tr>
+</tbody>
+</table>
+
+<br />
+
+
+<h5> setCircleWidth </h5>
+
+<pre>
+<code>public void setCircleWidth(int width)</code>
+</pre>
+This method used to set the layout's circle width. Especially, used to override the default circle width.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+</tr>
+
+<tr>
+
+<td> width </td>
+
+<td> The number should be represent the px value of the border width </td>
+
+</tr>
+
+</tbody>
+</table>
+
+<br />
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+</tr>
+
+<tr>
+<td>Void</td>
+<td>Nothing Return anything!</td>
+</tr>
+</tbody>
+</table>
+
+
+<br />
+
+
+<h5> setCircleHeight </h5>
+
+<pre>
+<code>public void setCircleHeight(int height)</code>
+</pre>
+This method used to set the layout's circle height. Especially, used to override the default circle height.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+</tr>
+
+<tr>
+
+<td> height </td>
+
+<td> The number should be represent the px value of the border height </td>
+
+</tr>
+
+</tbody>
+</table>
+
+<br />
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+</tr>
+
+<tr>
+<td>Void</td>
+<td>Nothing Return anything!</td>
+</tr>
+</tbody>
+</table>
+
+
+<br />
+
+
+<h5> setCircleSize </h5>
+
+<pre>
+<code>setCircleSize(int width, int height)</code>
+</pre>
+This method used to set the layout's circle width and height. Especially, used to override the default circle width and height setting.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+</tr>
+
+<tr>
+
+<td> height </td>
+
+<td> The number should be represent the px value of the border width </td>
+
+</tr>
+
+<tr>
+<td>width</td>
+<td>The number should be represent the px value of the border height</td>
+</tr>
+
+<tr>
+</tr>
+
+</tbody>
+</table>
+
+<br />
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+</tr>
+
+<tr>
+<td>Void</td>
+<td>Nothing Return anything!</td>
+</tr>
+</tbody>
+</table>
+
+<br />
+
+
+
+<h5> resetCircleWidthAndHeight() </h5>
+
+<pre>
+<code>public void resetCircleWidthAndHeight()</code>
+</pre>
+Revert back to the original circle width and height, while creating this view for the first time.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+</tr>
+
+<tr>
+<td>Null</td>
+<td></td>
+</tr>
+
+<tr>
+</tr>
+
+</tbody>
+</table>
+
+<br />
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+</tr>
+
+<tr>
+<td>Void</td>
+<td>Nothing Return anything!</td>
+</tr>
+</tbody>
+</table>
+
+
 
 
