@@ -2,6 +2,7 @@
 plugins {
     id 'com.android.application' version '7.2.2' apply false
     id 'com.android.library' version '7.2.2' apply false
+    id 'org.sonatype.gradle.plugins.scan' version '1.0.0'
 }
 
 task clean(type: Delete) {
