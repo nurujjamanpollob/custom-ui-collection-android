@@ -889,8 +889,45 @@ Used to define the background ripple scale. Defined via XML property.
 <tr>
 <td> app:ripple_scale </td>
 <td> float </td>
-<td>Defines the RippleBackground's background ripple amount. For example, we are craeting 3 ripples, first one is 100dp, if we set <b>ripple_scale</b> to <b>1.2</b> it will continue to grow 20% more than previous ripple, like first one is <b>100dp</b>, second one will be <b>120dp</b>, third one will be <b>144dp</b> </td> 
+<td>Defines the RippleBackground's background ripple amount. For example, we are creating 3 ripples, first one is 100dp, if we set <b>ripple_scale</b> to <b>1.2</b> it will continue to grow ,b>20%</b> more than previous ripple, like first one is <b>100dp</b>, second one will be <b>120dp</b>, third one will be <b>144dp</b> </td> 
 </tr> 
 </tbody>
 </table>
+
+
+<br />
+<h5> app:ripple_type </h5> 
+<pre>
+<code> app:ripple_type </code>
+</pre>
+
+Used to define the background ripple type. Can be filled or outlined style. Defined via XML property.
+
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:ripple_type </td>
+<td> enum </td>
+	<td>Defines the RippleBackground's background ripple type. The value can be either <b>fillRipple</b> for the filled style, for outlined style use <b>strokeRipple</b>. using value other than these may throw exception.</td> 
+</tr> 
+</tbody>
+</table>
+<hr />
+<br />
+<br />
+
+<h4> Constants </h4>
+
+This class do not have any constant. 
+<hr />
+<br />
+<br />
+
 
