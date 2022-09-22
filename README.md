@@ -46,7 +46,7 @@ pluginManagement {
 
 <br />
 <br />
-If you found library not found error, add this also like this, in your project level <b>settings.gradle</b> file:
+If you found library or dependency not found error, add this also like this, in your project level <b>settings.gradle</b> file:
 
 <br />
 
@@ -77,6 +77,7 @@ In your app level <b>build.gradle</b> file, add this:
 
 Detailed documentation will come shortly. Thank you.
 
+
 ## Class Documentation Part
 
 
@@ -97,6 +98,42 @@ You can't use <b>wrap_content</b> and <b>match_parent</b> as value of tag parame
 Because, <b>wrap_content</b> and <b>match_parent</b> is a dimension, and I don't know why android framework not passing appropriate dimension value for them, while reading.
 
 While initializing views, we need the <b>Height</b> and <b>Width</b> of the parent view, in order to calculate appropriate margin to center the circle view. when the parameter passes <b>wrap_content</b> and <b>match_parent</b> is throws <b>UnSupportedOperationException</b> because android framework do not convert them to dimension, and throw a <b>Exception</b> instead. While creating views, we always get <b>0</b> for <b>View Width</b> and <b>View Height</b>. So, it's become impossible to measure margins!
+<hr />
+<br />
+
+<h4> Interactive Mockup </h4>
+
+<img src="https://github.com/nurujjamanpollob/custom-ui-collection-android/raw/master/circle_layout_demo.gif" />
+
+<hr />
+
+<h4> Implementation Guide </h4>
+
+First, open your desired layout file and define the tag like this(remove space after start and tag):
+
+<pre>
+<code> < com.nurujjamanpollob.customview.CircleLayout
+
+        android:id="@+id/circleLayout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:circle_border_color="#F9F9F8"
+        app:circle_border_width="5dp"
+        app:circle_color="#4B4C4C">
+	
+< /com.nurujjamanpollob.customview.CircleLayout>
+</code>
+</pre>
+
+Set <b>0</b> for the value of <b>app:circle_border_width</b>, if you don't want circle border.
+
+Thats it. For your design guide, check documentation, you can also check these link for sample code:
+
+<ul>
+<li> <a href="https://github.com/nurujjamanpollob/custom-ui-collection-android/blob/master/app/src/main/res/layout/circle_layout_example.xml">Circle Layout Example XML</a></li>
+<li> <a href="https://github.com/nurujjamanpollob/custom-ui-collection-android/blob/master/app/src/main/java/dev/nurujjamanpollob/uitestapp/CircleLayoutDemoActivity.java">Circle Layout Demo Activity</a></li>
+</ul>
+
 <hr />
 <br />
 
@@ -583,6 +620,64 @@ No issues so far. Please report if you found any.
 <hr />
 <br />
 
+
+
+<h4> Interactive Mockup </h4>
+
+<img src="https://github.com/nurujjamanpollob/custom-ui-collection-android/raw/master/ripple_background_demo.gif" />
+
+<hr />
+
+<h4> Implementation Guide </h4>
+
+First, open your desired layout file and define the tag like this(remove space after start and tag):
+
+<pre>
+<code> < com.nurujjamanpollob.customview.RippleBackground
+        android:id="@+id/ripple_background"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:ripple_amount="3"
+        app:ripple_color="#F0F9F8"
+        app:ripple_duration="3000"
+        app:ripple_radius="50dp"
+        app:ripple_scale="2">
+	
+	< /com.nurujjamanpollob.customview.RippleBackground>
+</code>
+</pre>
+
+If you want ouline styled ripples, define <b>app:ripple_type</b> value to <b>strokeRipple</b>.
+
+Then, in your code, start animation like this:
+
+<pre>
+<code> 
+// Get ripple view by ID
+RippleBackground rippleBackground = findViewById(R.id.ripple_background);
+// Start Animation
+rippleBackground.startRippleAnimation();
+</code>
+</pre>
+
+it will be run infinite until you stop. To stop, you need to invoke this method:
+
+<pre>
+<code> rippleBackground.stopRippleAnimation(); </code>
+</pre>
+
+Hope, it helps!
+
+Thats it. For your design guide, check documentation, you can also check these link for sample code:
+
+<ul>
+<li> <a href="https://github.com/nurujjamanpollob/custom-ui-collection-android/blob/master/app/src/main/res/layout/ripple_background_example.xml">Ripple Background Example XML</a></li>
+<li> <a href="https://github.com/nurujjamanpollob/custom-ui-collection-android/blob/master/app/src/main/java/dev/nurujjamanpollob/uitestapp/RippleDemoActivity.java">Ripple Demo Activity</a></li>
+</ul>
+
+<hr />
+
+
 <h4> Constructors </h4>
 <br />
 First:
@@ -930,4 +1025,10 @@ This class do not have any constant.
 <br />
 <br />
 
+## Extra contents
 
+Looking for Android Developer for your project? I am available for work. contact me at nurujjamanpollob@gmail.com
+
+# Special Thanks
+
+To google team for great documentation to follow, and dear programmers for sharing many tutorials.
