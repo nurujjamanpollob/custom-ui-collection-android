@@ -740,4 +740,157 @@ Method to get whatever the the ripple animation is running in background or not.
 <br />
 
 
+<h4> XML Properties </h4>
+
+<br />
+<h5> app:ripple_color </h5> 
+<pre>
+<code> app:ripple_color </code>
+</pre>
+
+Used to define the background ripple color from the XML TAG
+
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:ripple_color </td>
+<td> color </td>
+<td> Defines the RippleBackground's background ripple color. A valid Android Framework supported hex color code is expected. it will be parsed autometically, and converted to framework supported format. </td> 
+</tr> 
+</tbody>
+</table>
+
+<br />
+<h5> app:ripple_strokeWidth </h5> 
+<pre>
+<code> app:ripple_strokeWidth </code>
+</pre>
+
+Used to define the background ripple stroke width. ONLY work when <b>app:ripple_type="strokeRipple"</b>
+
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:ripple_color </td>
+<td> dimension </td>
+<td> Defines the RippleBackground's background ripple stroke. A valid Android Framework supported dimension type is expected, such as dp, in, etc. it will be parsed autometically, and converted to framework supported format. </td> 
+</tr> 
+</tbody>
+</table>
+
+<br />
+<h5> app:ripple_radius </h5> 
+<pre>
+<code> app:ripple_radius </code>
+</pre>
+
+Used to define the background ripple radius. Defined via XML property.
+
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:ripple_radius </td>
+<td> dimension </td>
+<td> Defines the RippleBackground's background ripple radius. A valid Android Framework supported dimension type is expected, such as dp, in, etc. it will be parsed autometically, and converted to framework supported format. </td> 
+</tr> 
+</tbody>
+</table>
+
+
+<br />
+<h5> app:ripple_duration </h5> 
+<pre>
+<code> app:ripple_duration </code>
+</pre>
+
+Used to define the background ripple animation duration. The time unit is milisecond. Defined via XML property.
+
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:ripple_duration </td>
+<td> integer </td>
+<td> Defines the RippleBackground's background ripple animation. The integer, which we refer as time, is expect to be milliseconds, after a single ripple animation is time out. </td> 
+</tr> 
+</tbody>
+</table>
+
+<br />
+<h5> app:ripple_amount </h5> 
+<pre>
+<code> app:ripple_amount </code>
+</pre>
+
+Used to define the background ripple amount. Defined via XML property.
+
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:ripple_duration </td>
+<td> integer </td>
+<td> Defines the RippleBackground's background ripple amount. We will create ripples on the background following by this number. </td> 
+</tr> 
+</tbody>
+</table>
+
+
+<br />
+<h5> app:ripple_scale </h5> 
+<pre>
+<code> app:ripple_scale </code>
+</pre>
+
+Used to define the background ripple scale. Defined via XML property.
+
+
+<table>
+<tbody>
+<tr>
+<th> Property Name </th>
+<th> Property Type </th>
+<th> Property Short Description </th>
+</tr>
+
+<tr>
+<td> app:ripple_scale </td>
+<td> float </td>
+<td>Defines the RippleBackground's background ripple amount. For example, we are craeting 3 ripples, first one is 100dp, if we set <b>ripple_scale</b> to <b>1.2</b> it will continue to grow 20% more than previous ripple, like first one is <b>100dp</b>, second one will be <b>120dp</b>, third one will be <b>144dp</b> </td> 
+</tr> 
+</tbody>
+</table>
 
