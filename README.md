@@ -87,16 +87,17 @@ Detailed documentation will come shortly. Thank you.
 
 This class is a extended version of ConstraintLayout. This class is used to draw a circle in the background of the View, and it even supports circle border and supports adjusting background circle size parameter. The reason of using ConstraintLayout as it supports designing process so easy and highly customizable.
 
+<hr />
 <h3> Issues </h3>
 
 You can't use <b>wrap_content</b> and <b>match_parent</b> as value of tag parameter of <b>android:layout_width</b> and <b>android:layout_height</b> <br />
-
+<hr />
 <b>Why?</b> <br /> <br />
 
 Because, <b>wrap_content</b> and <b>match_parent</b> is a dimension, and I don't know why android framework not passing appropriate dimension value for them, while reading.
 
 While initializing views, we need the <b>Height</b> and <b>Width</b> of the parent view, in order to calculate appropriate margin to center the circle view. when the parameter passes <b>wrap_content</b> and <b>match_parent</b> is throws <b>UnSupportedOperationException</b> because android framework do not convert them to dimension, and throw a <b>Exception</b> instead. While creating views, we always get <b>0</b> for <b>View Width</b> and <b>View Height</b>. So, it's become impossible to measure margins!
-
+<hr />
 <br />
 
 <h4> Constructors </h4>
@@ -116,7 +117,7 @@ Third:
 <pre>
 <code> public CircleLayout(Context context, AttributeSet attrs, int defStyleAttr) // Initialize the view in given context with attributes from XML and An attribute in the current theme that contains a reference to a style resource that supplies default values for the view </code>
 </pre>
-
+<hr />
 
 <h4> Public Methods </h4>
 
@@ -428,7 +429,7 @@ Revert back to the original circle width and height, while creating this view fo
 </tr>
 </tbody>
 </table>
-
+<hr />
 <br />
 
 <h4> XML Properties </h4>
@@ -560,15 +561,183 @@ Used to define the View Width
 </tr> 
 </tbody>
 </table>
-
-<br />
+<hr />
 <br />
 
 <h4> Constants </h4>
 No constants are defined for this class!
+<hr />
 
 <h4> <a href="https://github.com/nurujjamanpollob/custom-ui-collection-android/blob/master/uimodule/src/main/java/com/nurujjamanpollob/customview/RippleBackground.java">RippleBackground - Show Ripple effect on the view </a></h4>
 
 <br />
 <br />
-<h2>The documentation is in progress. It will be updated shortly! </h2>
+This class is a extended version of <b>Relative Layout</b>. This class used to show Ripple Effect in the background of <b>View</b>. This class usages an inner class named <b>RippleView</b> to create the backgound circle, as following by XML property value of <b>ripple_amount</b> where <b>ripple_amount</b> is refers to how many circles to create and animate on the <b>View</b>. Also, I have used <b>ObjectAnimator</b> and <b>AnimatorSet</b> to animate those ripples.
+<hr />
+<br />
+
+<h4> Issues </h4>
+
+No issues so far. Please report if you found any.
+
+<hr />
+<br />
+
+<h4> Constructors </h4>
+<br />
+First:
+<pre>
+<code> public RippleBackground(Context context) // Initialize this view in the given context </code>
+</pre>
+
+<br />
+Second:
+<pre>
+<code> public RippleBackground(Context context, AttributeSet attrs) // Initialize this view in the given context with properties from the XML </code>
+</pre>
+<br />
+
+Third:
+<pre>
+<code> public RippleBackground(Context context, AttributeSet attrs, int defStyleAttr) //Initialize the view in given context with attributes from XML and An attribute in the current theme that contains a reference to a style resource that supplies default values for the view </code>
+</pre>
+<hr />
+<br />
+<br />
+
+<h4> Public Methods </h4>
+
+
+<br />
+<h5> startRippleAnimation() </h5>
+
+<pre>
+<code>public void startRippleAnimation()</code>
+</pre>
+Method to start ripple animation in the background View.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+<th> Short Details </th>
+</tr>
+
+<tr>
+<td>Null</td>
+<td></td>
+</tr>
+
+<tr>
+</tr>
+
+</tbody>
+</table>
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+<th> Short Details </th>
+</tr>
+
+<tr>
+<td>Void</td>
+<td>Nothing</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<br />
+<h5> stopRippleAnimation() </h5>
+
+<pre>
+<code>public void stopRippleAnimation()</code>
+</pre>
+Method to stop ripple animation in the background View.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+<th> Short Details </th>
+</tr>
+
+<tr>
+<td>Null</td>
+<td></td>
+</tr>
+
+<tr>
+</tr>
+
+</tbody>
+</table>
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+<th> Short Details </th>
+</tr>
+
+<tr>
+<td>Void</td>
+<td>Nothing</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<br />
+<h5> isRippleAnimationRunning() </h5>
+
+<pre>
+<code>public boolean isRippleAnimationRunning()</code>
+</pre>
+Method to get whatever the the ripple animation is running in background or not.
+
+<table>
+
+<tbody>
+
+<tr>
+<th> Parameters </th>
+<th> Short Details </th>
+</tr>
+
+<tr>
+<td>Null</td>
+<td></td>
+</tr>
+
+<tr>
+</tr>
+
+</tbody>
+</table>
+<table>
+<tbody>
+<tr> 
+<th>Return Type</th>
+<th> Short Details </th>
+</tr>
+
+<tr>
+<td>boolean</td>
+<td>Return true if the Ripple animation is running and showing on the background. Else, false is returned. </td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+<br />
+<br />
+
+
+
